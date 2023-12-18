@@ -184,6 +184,13 @@
                             </ul>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="{{ route('roleakses') }}">
+                                <i data-lucide="person-standing"></i>
+                                <p>Role Akses</p>
+                            </a>
+                        </li>
+
 
 
 

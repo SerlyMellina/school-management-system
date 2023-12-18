@@ -128,6 +128,9 @@ Route::group(['middleware' => ['auth', 'role:1']], function () {
     Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
     // Route::get('index-profile', 'ProfileController@index')->name('profile');
 
+    //Route roleakses
+    Route::get('index-roleakses', 'RoleaksesController@index')->name('roleakses');
+
 });
 
 // RICI
