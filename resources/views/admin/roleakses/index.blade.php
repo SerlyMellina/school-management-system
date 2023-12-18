@@ -40,7 +40,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($siswa as $row)
+                                @foreach ($user as $row)
                                     <tr>
                                         <td>{{ $loop->index + 1 }}</td>
                                         <td>{{ $row->nama }}</td>
@@ -64,4 +64,3 @@
 @endsection
 
 
-@endsection
