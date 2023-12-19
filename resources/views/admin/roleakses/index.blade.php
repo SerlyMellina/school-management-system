@@ -21,12 +21,14 @@
                 <div class="card p-4 m-2">
                     <div class="row">
                         <div class="col-6">
-                            <h5>Data Siswa</h5>
+                            <h5>Data Role Akses</h5>
                         </div>
                         <div class="col-6">
                             <div class="float-right mb-3">
                                 <a class="btn btn-outline-primary"><i class="fas fa-download"></i>
                                     Download</a>
+                                <a href="#" class="btn btn-primary"><i
+                                     class="fas fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -43,13 +45,13 @@
                                 @foreach ($user as $row)
                                     <tr>
                                         <td>{{ $loop->index + 1 }}</td>
-                                        <td>{{ $row->nama }}</td>
+                                        <td>{{ $row->name }}</td>
                                         <td>{{ $row->usertype }}</td>
 
 
                                         <td>
                                             <a href="#"
-                                                class="btn btn-primary" role="button">Submit</a>
+                                                class="btn btn-primary" role="button" color="red">Hapus</a>
 
                                         </td>
                                     </tr>
