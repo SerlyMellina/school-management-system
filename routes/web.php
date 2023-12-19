@@ -130,6 +130,8 @@ Route::group(['middleware' => ['auth', 'role:1']], function () {
 
     //Route roleakses
     Route::get('index-roleakses', 'RoleaksesController@index')->name('roleakses');
+    Route::delete('deleteUser/{id}', 'RoleaksesController@delete')->name('deleteUser');
+    Route::post('tambah-roleakses', 'RoleksesController@tambahrole')->name('tambah-roleakses');
 
 });
 

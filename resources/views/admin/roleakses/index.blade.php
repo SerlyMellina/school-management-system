@@ -39,6 +39,7 @@
                                     <th>No</th>
                                     <th>Nama</th>
                                     <th>Role Akses</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -50,8 +51,11 @@
 
 
                                         <td>
-                                            <a href="#"
-                                                class="btn btn-primary" role="button" color="red">Hapus</a>
+                                            <form action="{{ route('deleteUser', $row->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                            </form>
 
                                         </td>
                                     </tr>
