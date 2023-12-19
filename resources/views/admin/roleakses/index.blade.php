@@ -27,7 +27,7 @@
                             <div class="float-right mb-3">
                                 <a class="btn btn-outline-primary"><i class="fas fa-download"></i>
                                     Download</a>
-                                <a href="#" class="btn btn-primary"><i
+                                <a href="{{ route('tambahUser') }}" class="btn btn-primary"><i
                                      class="fas fa-plus"></i></a>
                             </div>
                         </div>

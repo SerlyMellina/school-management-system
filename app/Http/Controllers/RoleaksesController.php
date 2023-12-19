@@ -24,10 +24,12 @@ class RoleaksesController extends Controller
 
     public function store(Request$request)
     {
-        $data = new User();
-        $data->nama = $request->input('nama');
-        $data->roleakses = $request->input('usertype');
-        $data->save();
+        // $data = new User();
+        // $data->name = $request->input('name');
+        // $data->usertype = $request->input('usertype');
+        // $data->save();
+
+        dd($request->all());
     }
     
 }

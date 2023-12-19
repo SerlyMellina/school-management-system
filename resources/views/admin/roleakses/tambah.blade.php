@@ -21,8 +21,9 @@
 
         <div class="card p-4" style="margin: 20px;">
             <div class="container-fluid">
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('tambahUser') }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('POST')
 
                 <div class="mb-3">
                     <label for="nama">Nama</label>
@@ -32,7 +33,7 @@
 
                 <div class="mb-3">
                     <label for="user">Usertype</label>
-                    <input type="text" name="nama" id="nama" class="form-control" autocomplete="off"
+                    <input type="text" name="usertype" id="nama" class="form-control" autocomplete="off"
                     placeholder="Masukkan usert Type..">
                 </div>
 
